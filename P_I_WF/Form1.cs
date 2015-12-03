@@ -21,5 +21,11 @@ namespace P_I_WF
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            login l = new login();
+            l.Show();
+        }
     }
 }

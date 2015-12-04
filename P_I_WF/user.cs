@@ -10,24 +10,16 @@ using System.Windows.Forms;
 
 namespace P_I_WF
 {
-    public partial class Form1 : Form
+    public partial class user : Form
     {
-        public Form1()
+        public user()
         {
             InitializeComponent();
-            login l = new login();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void user_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            login l = new login();
-            l.Show();
-            this.Hide();
         }
     }
 }

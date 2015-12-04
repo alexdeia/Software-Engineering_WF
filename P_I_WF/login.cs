@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Data.SQLite;
 
 namespace P_I_WF
 {
@@ -17,17 +18,19 @@ namespace P_I_WF
         {
             InitializeComponent();
         }
-
+        
         private void b_login_Click(object sender, EventArgs e)
         {
-            SqlConnection l_con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Program Files\Project\P_I_WF\users.mdf;Integrated Security=True;Connect Timeout=30;");
+            SQLiteConnection l_con = new SQLiteConnection(@"data source = |DataDirectory|\users.db;");
+            //SqlConnection l_con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Program Files\Project\P_I_WF\users.mdf;Integrated Security=True;Connect Timeout=30;");
+            //SqlConnection l_con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\users.mdf;Integrated Security=True;Connect Timeout=30;");
             //SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM [Table] WHERE login LIKE "+login_box.Text+" AND password LIKE "+password_box.Text, l_con);
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM [Table] WHERE login = '" + login_box.Text + "' AND password = '" + password_box.Text + "'", l_con);
-            DataTable dt = new DataTable();
+            SQLiteDataAdapter sda = new SQLiteDataAdapter("SELECT COUNT(*) FROM [users] WHERE login = '" + login_box.Text + "' AND password = '" + password_box.Text + "'", l_con);
+             DataTable dt = new DataTable();
             sda.Fill(dt);
             if (dt.Rows[0][0].ToString() == "1")
-                MessageBox.Show("OK");
-            else MessageBox.Show("NO");
+                MessageBox.Show("Вы успешно авторизированы");
+            else MessageBox.Show("Неправильный логин/пароль");
         }
     }
 }

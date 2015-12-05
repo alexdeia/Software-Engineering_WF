@@ -33,8 +33,6 @@ namespace P_I_WF
                 MessageBox.Show("Вы успешно авторизированы");
                 this.Hide();
                 user u = new user();
-                Form1 f1 = new Form1();
-                f1.Hide();
                 u.l_hello.Text = "Добро пожаловать, " + login_box.Text;
                 u.Show();
             
@@ -53,5 +51,6 @@ namespace P_I_WF
         {
             if (cb_pass.Checked == true) { password_box.UseSystemPasswordChar = false; } else { password_box.UseSystemPasswordChar = true; }
         }
+
     }
 }

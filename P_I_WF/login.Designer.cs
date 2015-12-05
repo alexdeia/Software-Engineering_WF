@@ -93,7 +93,7 @@
             // cb_pass
             // 
             this.cb_pass.AutoSize = true;
-            this.cb_pass.Location = new System.Drawing.Point(77, 90);
+            this.cb_pass.Location = new System.Drawing.Point(77, 93);
             this.cb_pass.Name = "cb_pass";
             this.cb_pass.Size = new System.Drawing.Size(114, 17);
             this.cb_pass.TabIndex = 11;
@@ -105,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(238, 195);
+            this.ClientSize = new System.Drawing.Size(258, 195);
             this.Controls.Add(this.cb_pass);
             this.Controls.Add(this.b_reg);
             this.Controls.Add(this.b_login);

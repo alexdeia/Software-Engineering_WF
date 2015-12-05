@@ -21,5 +21,18 @@ namespace P_I_WF
         {
 
         }
+
+        private void b_close_Click(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        private void b_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            login l = new login();
+            l.Show();
+        }
     }
 }

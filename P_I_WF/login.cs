@@ -14,6 +14,7 @@ namespace P_I_WF
 {
     public partial class login : Form
     {
+        public SQLiteConnection l_con = new SQLiteConnection(@"data source=D:\Program Files\Project\P_I_WF\users.db");
         public login()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace P_I_WF
 
         private void b_login_Click(object sender, EventArgs e)
         {
-            SQLiteConnection l_con = new SQLiteConnection(@"data source=D:\Program Files\Project\P_I_WF\users.db");
+            
             //SqlConnection l_con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Program Files\Project\P_I_WF\users.mdf;Integrated Security=True;Connect Timeout=30;");
             //SqlConnection l_con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\users.mdf;Integrated Security=True;Connect Timeout=30;");
             //SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM [Table] WHERE login LIKE "+login_box.Text+" AND password LIKE "+password_box.Text, l_con);

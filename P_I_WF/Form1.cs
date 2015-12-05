@@ -49,7 +49,7 @@ namespace P_I_WF
                     item.SubItems.Add(dr["leading"].ToString());
                     item.SubItems.Add(dr["links"].ToString());
 
-                    ListView1.Items.Add(item);
+                    lv_guest.Items.Add(item);
                 }
             }
             catch(Exception ex)
@@ -85,5 +85,38 @@ namespace P_I_WF
                 Application.ExitThread();
             }
         }
+
+        //private void lv_guest_MouseDown(object sender, MouseEventArgs e)
+        //{
+        //    if (e.Clicks > 1)
+        //    {
+        //        TextBox tbox = new TextBox();
+        //        this.Controls.Add(tbox);
+        //        tbox.Width = lv_guest.Columns[2].Width;
+        //        ListViewItem item = lv_guest.GetItemAt(0, e.Y);
+        //        if (item != null)
+        //        {
+        //            int x_cord = 0;
+        //            for (int i = 0; i < lv_guest.Columns.Count - 1; i++)
+        //                x_cord += lv_guest.Columns[i].Width;
+        //            tbox.Left = x_cord;
+        //            tbox.Top = item.Position.Y;
+        //            tbox.Text = item.SubItems[2].Text;
+        //            tbox.Leave += DisposeTextBox;
+        //            tbox.KeyPress += TextBoxKeyPress;
+        //            lv_guest.Controls.Add(tbox);
+        //            tbox.Focus();
+        //            tbox.Select(tbox.Text.Length, 1);
+        //        }
+        //    }
+        //}
+
+        //private void TextBoxKeyPress(object sender, KeyPressEventArgs e)
+        //{
+        //    if (e.KeyChar == 13)
+        //        DisposeTextBox((sender as TextBox), null);
+        //    if (e.KeyChar == 27)
+        //        (sender as TextBox).Dispose();
+        //}
     }
 }

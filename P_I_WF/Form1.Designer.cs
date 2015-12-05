@@ -30,16 +30,15 @@
         {
             this.b_auth = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.ListView1 = new System.Windows.Forms.ListView();
+            this.lv_guest = new System.Windows.Forms.ListView();
             this.show = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.leading = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.links = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // b_auth
             // 
-            this.b_auth.Location = new System.Drawing.Point(583, 12);
+            this.b_auth.Location = new System.Drawing.Point(439, 12);
             this.b_auth.Name = "b_auth";
             this.b_auth.Size = new System.Drawing.Size(146, 23);
             this.b_auth.TabIndex = 0;
@@ -50,53 +49,48 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(92, 17);
+            this.label1.Location = new System.Drawing.Point(9, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(401, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Для получения расширенного функционала пройдите процедуру регистрации";
             // 
-            // ListView1
+            // lv_guest
             // 
-            this.ListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lv_guest.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.show,
             this.time,
-            this.leading,
-            this.links});
-            this.ListView1.Location = new System.Drawing.Point(13, 82);
-            this.ListView1.Name = "ListView1";
-            this.ListView1.Size = new System.Drawing.Size(893, 230);
-            this.ListView1.TabIndex = 2;
-            this.ListView1.UseCompatibleStateImageBehavior = false;
-            this.ListView1.View = System.Windows.Forms.View.Details;
-            this.ListView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.leading});
+            this.lv_guest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lv_guest.Location = new System.Drawing.Point(12, 79);
+            this.lv_guest.Name = "lv_guest";
+            this.lv_guest.Size = new System.Drawing.Size(573, 241);
+            this.lv_guest.TabIndex = 2;
+            this.lv_guest.UseCompatibleStateImageBehavior = false;
+            this.lv_guest.View = System.Windows.Forms.View.Details;
+            this.lv_guest.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // show
             // 
             this.show.Text = "Передача";
-            this.show.Width = 100;
+            this.show.Width = 176;
             // 
             // time
             // 
             this.time.Text = "Время";
-            this.time.Width = 70;
+            this.time.Width = 174;
             // 
             // leading
             // 
             this.leading.Text = "Имя ведущего";
-            this.leading.Width = 120;
-            // 
-            // links
-            // 
-            this.links.Text = "Подробное описание";
-            this.links.Width = 120;
+            this.leading.Width = 218;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(918, 350);
-            this.Controls.Add(this.ListView1);
+            this.ClientSize = new System.Drawing.Size(617, 350);
+            this.Controls.Add(this.lv_guest);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.b_auth);
             this.Name = "Form1";
@@ -112,11 +106,10 @@
 
         private System.Windows.Forms.Button b_auth;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView ListView1;
+        private System.Windows.Forms.ListView lv_guest;
         private System.Windows.Forms.ColumnHeader show;
         private System.Windows.Forms.ColumnHeader time;
         private System.Windows.Forms.ColumnHeader leading;
-        private System.Windows.Forms.ColumnHeader links;
     }
 }
 

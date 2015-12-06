@@ -78,6 +78,21 @@ namespace P_I_WF
             if (cb_pass.Checked == true) { password_box.UseSystemPasswordChar = false; } else { password_box.UseSystemPasswordChar = true; }
         }
 
+        private void b_reg_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l_con.Open();
+                SQLiteCommand cmd_reg = l_con.CreateCommand();
+                cmd_reg.CommandText = "INSERT INTO [usersss] ([login],[password], [groups]) VALUES ('" + login_box.Text + "', '" + password_box.Text + "', 'user')";
+                if (cmd_reg.ExecuteNonQuery() == 1)
+                    MessageBox.Show("Вы успешно зарегистрированы!");
+                l_con.Close();
+            }
+            catch (SQLiteException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
-   

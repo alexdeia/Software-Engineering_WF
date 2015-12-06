@@ -89,6 +89,7 @@
             this.b_reg.TabIndex = 10;
             this.b_reg.Text = "Зерегистрироваться";
             this.b_reg.UseVisualStyleBackColor = true;
+            this.b_reg.Click += new System.EventHandler(this.b_reg_Click);
             // 
             // cb_pass
             // 

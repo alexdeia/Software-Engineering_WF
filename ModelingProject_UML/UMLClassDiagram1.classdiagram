@@ -1,1 +1,115 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="c8ef1e8d-ca18-466a-84ca-66f1cd048c01" name="UMLClassDiagram1" linkedPackageId="fd227371-f3d1-4d58-9782-52bc37b05165" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="8018a04d-a3f6-428f-a231-659f1b6294ea">
+      <profileInstance Id="6c92d6be-0f1e-4ccf-a68f-6135f8890bd5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="667b7173-1264-469d-a323-5056fb53e11f">
+      <profileInstance Id="b6da0a2c-a617-4701-af36-a94651ff7e6c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="95a05962-461a-4c64-a29b-10d733d65098" name="Начальная форма гостя" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dbc4e8c9-0bc1-43a2-a143-886d2353c2c5" />
+        <ownedAttributesInternal>
+          <property Id="cec78e80-f5f6-489a-8db5-ce146f2baf5a" name="Form" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cdb9db38-c1f7-4c4c-845a-27d37e681e6c" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="c09ca48a-1170-4ee4-8101-ffbcdb39f9f3" name="Подключенить к БД и вывод таблицы" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="729f813f-4c90-4eb7-b5e7-24077a1671b9" />
+          </operation>
+          <operation Id="74b88ad1-0ce4-44f1-b4b1-6304816bedcf" name="Открыть форму авторизации" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c6ea21ea-4615-4378-8931-76559f13ebab" />
+          </operation>
+          <operation Id="47dcb0f2-ae78-4a35-af00-958ab067dfaa" name="Отобразить таблицу" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d6490414-cbd3-4ee7-9a41-b42fada8000a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fed34058-3dec-4f59-9f8d-4f7b0872201d" name="Форма авторизации" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6d78a4e4-3218-4cd7-8580-c1cc2a3197af" />
+        <suppliersInternal>
+          <dependency Id="82383aae-936d-4c1d-8383-9e2f18fa4e0b">
+            <classMoniker Id="95a05962-461a-4c64-a29b-10d733d65098" LastKnownName="Начальная форма гостя" />
+            <elementDefinition Id="3683356f-a677-4ce2-8db5-49b5c3914827" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="6845d8f1-8f82-41c2-b79d-ed0cf0f4e43f" name="Form" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eda6cfd6-d8ff-4e76-b692-898e84dc1084" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="8e4ab127-865d-4b8d-ba62-3540f521c25c" name="Подключение к БД" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c7264794-14e6-404b-b0e5-fc239cd2a7b6" />
+          </operation>
+          <operation Id="e69c542d-c40c-4793-9191-eb07d07cd66e" name="Авторизация" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="58681736-6677-4e5b-89eb-2d79f23ecf8a" />
+          </operation>
+          <operation Id="477783e9-103d-4675-9088-c5e28c41cf5a" name="Изменить вид отображения пароля" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f037d9c0-9500-4f51-adb5-5789ff7d8a9f" />
+          </operation>
+          <operation Id="dd4d061d-2d9e-4b27-808d-da1c3566f7bb" name="Регистрация" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2329325f-3078-4ca8-a6a0-6e80cd7cd5c6" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cd0ce5d6-8fa3-4de2-9f41-913c658a8685" name="Панель пользователя" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="47939882-b1ba-4441-9ced-722c09a9eed3" />
+        <suppliersInternal>
+          <dependency Id="1070701e-020f-49ec-831b-b84a97545d30">
+            <classMoniker Id="fed34058-3dec-4f59-9f8d-4f7b0872201d" LastKnownName="Форма авторизации" />
+            <elementDefinition Id="915c796c-1766-405a-96d6-97111d1cbc51" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="4bc225d2-260b-44ca-bf75-00468570123c" name="Form" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5d1bfd94-8ce5-49a5-9341-afb4919bb8ee" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b147aa37-63e4-4302-bba7-ebcec51d94b2" name="Выход на страницу авторизации" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dc972622-af5b-4331-bab7-1b2b2e26a40b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8abc74fc-aa46-4a2b-81b1-5661ba408821" name="Администрирование" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d825a542-ff50-4b8f-87ae-348b850d09a6" />
+        <suppliersInternal>
+          <dependency Id="92dc7e1d-3787-4fc2-a143-ba6028c36e7a">
+            <classMoniker Id="fed34058-3dec-4f59-9f8d-4f7b0872201d" LastKnownName="Форма авторизации" />
+            <elementDefinition Id="76548a5d-3521-46a1-8e53-110e859dfb5d" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="b4db44ea-4a91-4cf0-a890-92e18b479eda" name="Form" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ff4bf1be-168b-4f73-bf69-17af8a584c9f" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="16659333-45bd-414d-bbd2-14a589c4e830" name="Выход на страницу авторизации" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="18a0c8ab-94dd-4af8-95d8-0d130b942ef1" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="fd227371-f3d1-4d58-9782-52bc37b05165" name="ModelingProject_UML">
+    <elementDefinition Id="81998da2-f1d6-4dd9-be79-d61a1b4b11ad" />
+  </package>
+</logicalClassDesignerModel>

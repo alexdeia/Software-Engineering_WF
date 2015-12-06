@@ -23,5 +23,10 @@ namespace P_I_WF
             login l = new login();
             l.Show();
         }
+
+        private void admin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

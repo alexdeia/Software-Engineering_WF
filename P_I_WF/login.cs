@@ -94,5 +94,10 @@ namespace P_I_WF
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

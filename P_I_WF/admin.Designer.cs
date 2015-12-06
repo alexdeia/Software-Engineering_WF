@@ -60,6 +60,7 @@
             this.Controls.Add(this.l_hello);
             this.Name = "admin";
             this.Text = "admin";
+            this.Load += new System.EventHandler(this.admin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

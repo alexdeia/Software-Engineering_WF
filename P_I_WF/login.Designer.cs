@@ -116,6 +116,7 @@
             this.Controls.Add(this.label1);
             this.Name = "login";
             this.Text = "Авторизация";
+            this.Load += new System.EventHandler(this.login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

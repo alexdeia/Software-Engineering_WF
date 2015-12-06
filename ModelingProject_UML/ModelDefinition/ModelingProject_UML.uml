@@ -17,28 +17,229 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="dbc4e8c9-0bc1-43a2-a143-886d2353c2c5"
+        name="Начальная форма гостя"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="cdb9db38-c1f7-4c4c-845a-27d37e681e6c"
+            name="Form"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="729f813f-4c90-4eb7-b5e7-24077a1671b9"
+            name="Подключенить к БД и вывод таблицы"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c6ea21ea-4615-4378-8931-76559f13ebab"
+            name="Открыть форму авторизации"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d6490414-cbd3-4ee7-9a41-b42fada8000a"
+            name="Отобразить таблицу"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6d78a4e4-3218-4cd7-8580-c1cc2a3197af"
+        name="Форма авторизации"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="3683356f-a677-4ce2-8db5-49b5c3914827">
+            <classMoniker
+              Id="dbc4e8c9-0bc1-43a2-a143-886d2353c2c5"
+              LastKnownName="Начальная форма гостя"
+              LastKnownLocation="ModelingProject_UML.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="eda6cfd6-d8ff-4e76-b692-898e84dc1084"
+            name="Form"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c7264794-14e6-404b-b0e5-fc239cd2a7b6"
+            name="Подключение к БД"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="58681736-6677-4e5b-89eb-2d79f23ecf8a"
+            name="Авторизация"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f037d9c0-9500-4f51-adb5-5789ff7d8a9f"
+            name="Изменить вид отображения пароля"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2329325f-3078-4ca8-a6a0-6e80cd7cd5c6"
+            name="Регистрация"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="47939882-b1ba-4441-9ced-722c09a9eed3"
+        name="Панель пользователя"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="915c796c-1766-405a-96d6-97111d1cbc51">
+            <classMoniker
+              Id="6d78a4e4-3218-4cd7-8580-c1cc2a3197af"
+              LastKnownName="Форма авторизации"
+              LastKnownLocation="ModelingProject_UML.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="5d1bfd94-8ce5-49a5-9341-afb4919bb8ee"
+            name="Form"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="dc972622-af5b-4331-bab7-1b2b2e26a40b"
+            name="Выход на страницу авторизации"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d825a542-ff50-4b8f-87ae-348b850d09a6"
+        name="Администрирование"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="76548a5d-3521-46a1-8e53-110e859dfb5d">
+            <classMoniker
+              Id="6d78a4e4-3218-4cd7-8580-c1cc2a3197af"
+              LastKnownName="Форма авторизации"
+              LastKnownLocation="ModelingProject_UML.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="ff4bf1be-168b-4f73-bf69-17af8a584c9f"
+            name="Form"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="18a0c8ab-94dd-4af8-95d8-0d130b942ef1"
+            name="Выход на страницу авторизации"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
 </modelStoreModel>

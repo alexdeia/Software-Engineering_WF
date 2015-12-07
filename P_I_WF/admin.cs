@@ -135,16 +135,16 @@ namespace P_I_WF
 
         private void mtb_time_Leave(object sender, EventArgs e)
         {
-            try
-            {
-                DateTime a = DateTime.Parse(mtb_duration.Text);
-                if (a.Hour < 4)
-                    MessageBox.Show("Введите значение больше 4:00");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            //try
+            //{
+            //    DateTime a = DateTime.Parse(mtb_duration.Text);
+            //    if (a.Hour < 4)
+            //        MessageBox.Show("Введите значение больше 4:00");
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
         }
     }
 }

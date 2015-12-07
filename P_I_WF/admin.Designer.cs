@@ -30,6 +30,9 @@
         {
             this.l_hello = new System.Windows.Forms.Label();
             this.b_exit = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.b_save = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // l_hello
@@ -51,16 +54,39 @@
             this.b_exit.UseVisualStyleBackColor = true;
             this.b_exit.Click += new System.EventHandler(this.b_exit_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 63);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(847, 258);
+            this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // b_save
+            // 
+            this.b_save.Location = new System.Drawing.Point(748, 327);
+            this.b_save.Name = "b_save";
+            this.b_save.Size = new System.Drawing.Size(111, 46);
+            this.b_save.TabIndex = 4;
+            this.b_save.Text = "Сохранить";
+            this.b_save.UseVisualStyleBackColor = true;
+            this.b_save.Click += new System.EventHandler(this.b_save_Click);
+            // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 346);
+            this.ClientSize = new System.Drawing.Size(871, 385);
+            this.Controls.Add(this.b_save);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.b_exit);
             this.Controls.Add(this.l_hello);
             this.Name = "admin";
             this.Text = "admin";
             this.Load += new System.EventHandler(this.admin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -70,5 +96,7 @@
 
         public System.Windows.Forms.Label l_hello;
         private System.Windows.Forms.Button b_exit;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button b_save;
     }
 }

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///D:/PROGRAM FILES/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Журнал создания кода/преобразования текста">
+  <MessageClass Name="Message" Label="Сообщение" Option="Показывать информационные сообщения" />
+  <MessageClass Name="Warning" Label="Предупреждение" Option="Показывать предупреждения" />
+  <MessageClass Name="Error" Label="Ошибка" Option="Показывать ошибки" />
+  <MessageClass Name="Property" Label="Свойство" Option="Показывать метаданные" />
+  <MessageClass Name="Diagnostic" Label="Сообщение" Option="Показывать диагностические сообщения" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="High" Text="Запущено создание кода или преобразование текста." />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="Имя = ClassTemplate" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="Перезаписать = True" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject_UMLLib\ModelingProject_UMLLib.csproj" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="TemplateFilePath = D:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="ResolvedTemplateFilePath = D:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Medium" Text="Привязка шаблона текста, принадлежащая ModelingProject_UML: &quot;ClassTemplate&quot; применит ClassTemplate.t4 к: &quot;ModelingProject_UML::Начальная форма гостя&quot; -  (Class), &quot;ModelingProject_UML::Форма авторизации&quot; -  (Class), &quot;ModelingProject_UML::Панель пользователя&quot; -  (Class), &quot;ModelingProject_UML::Администрирование&quot; -  (Class) " />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="&quot;ModelingProject_UML::Начальная форма гостя&quot; -  (Class): файлы не созданы, поскольку метод AppliesToElement шаблона &quot;ClassTemplate.t4&quot; возвратил значение false." />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="&quot;ModelingProject_UML::Форма авторизации&quot; -  (Class): файлы не созданы, поскольку метод AppliesToElement шаблона &quot;ClassTemplate.t4&quot; возвратил значение false." />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="&quot;ModelingProject_UML::Панель пользователя&quot; -  (Class): файлы не созданы, поскольку метод AppliesToElement шаблона &quot;ClassTemplate.t4&quot; возвратил значение false." />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="&quot;ModelingProject_UML::Администрирование&quot; -  (Class): файлы не созданы, поскольку метод AppliesToElement шаблона &quot;ClassTemplate.t4&quot; возвратил значение false." />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="Имя = StructTemplate" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="Перезаписать = True" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject_UMLLib\ModelingProject_UMLLib.csproj" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="TemplateFilePath = D:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="ResolvedTemplateFilePath = D:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Medium" Text="Привязка шаблона текста, принадлежащая ModelingProject_UML: &quot;StructTemplate&quot; применит StructTemplate.t4 к: &quot;ModelingProject_UML::Начальная форма гостя&quot; -  (Class), &quot;ModelingProject_UML::Форма авторизации&quot; -  (Class), &quot;ModelingProject_UML::Панель пользователя&quot; -  (Class), &quot;ModelingProject_UML::Администрирование&quot; -  (Class) " />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="&quot;ModelingProject_UML::Начальная форма гостя&quot; -  (Class): файлы не созданы, поскольку метод AppliesToElement шаблона &quot;StructTemplate.t4&quot; возвратил значение false." />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="&quot;ModelingProject_UML::Форма авторизации&quot; -  (Class): файлы не созданы, поскольку метод AppliesToElement шаблона &quot;StructTemplate.t4&quot; возвратил значение false." />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="&quot;ModelingProject_UML::Панель пользователя&quot; -  (Class): файлы не созданы, поскольку метод AppliesToElement шаблона &quot;StructTemplate.t4&quot; возвратил значение false." />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="&quot;ModelingProject_UML::Администрирование&quot; -  (Class): файлы не созданы, поскольку метод AppliesToElement шаблона &quot;StructTemplate.t4&quot; возвратил значение false." />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="Выбрано 3 элементов, не связанных с шаблоном." />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="&quot;ModelingProject_UML::&quot; -  (Dependency): нет привязанных шаблонов." />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="&quot;ModelingProject_UML::&quot; -  (Dependency): нет привязанных шаблонов." />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="Diagnostic" Text="&quot;ModelingProject_UML::&quot; -  (Dependency): нет привязанных шаблонов." />
+  <Message Timestamp="2015-12-07T00:45:23" Importance="High" Text="Создание кода завершено. Ошибок: 0. Предупреждений: 0." />
+</Log>

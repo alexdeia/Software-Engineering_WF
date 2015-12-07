@@ -1,5 +1,77 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="c8ef1e8d-ca18-466a-84ca-66f1cd048c01" name="UMLClassDiagram1" linkedPackageId="fd227371-f3d1-4d58-9782-52bc37b05165" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="cf127573-1537-494b-be15-a5a3e0b69e22" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="cb2db45b-99b4-4822-9c00-1ffd3ea00212" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="938737f1-60bf-4e24-9b05-2f3a87d38257">
+          <propertyInstance Id="024ab97e-2a89-4498-a39e-0f13f98b8113" name="BaseName">
+            <elementDefinition Id="594868d4-ea34-4e6f-8e74-19ca6c7a7584" />
+          </propertyInstance>
+          <elementDefinition Id="54f9fbcb-496e-4fbc-8713-bd216c7b7d14" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d7396cea-749e-4432-84d7-dd451721e737">
+          <propertyInstance Id="d216f380-08fd-4877-8ec6-e4cd051759f5" name="ClrAttributes">
+            <elementDefinition Id="0d07b334-92b2-43d6-b0dc-25fcac6c02a1" />
+          </propertyInstance>
+          <elementDefinition Id="d6ae1bd5-bc09-4a86-801a-07c1cdad3c48" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3f7d7090-ec45-43c5-9297-eb4f2b99bc19">
+          <propertyInstance Id="ac06c012-37e8-4acc-959a-f579081c3d57" name="Usings">
+            <elementDefinition Id="5bece1c1-e6e6-494a-9230-3cb36fdf1040" />
+          </propertyInstance>
+          <elementDefinition Id="ce2decbe-20fb-4e47-9638-d93c58274d2a" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="909ec3fb-6bf2-4128-87ac-4f585d923e51" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="598f2f2e-e873-43d3-ba53-f4359a91e15a" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6388a487-c2d9-41b4-81cb-075ba8d8204b">
+          <propertyInstance Id="4f392151-54f3-4e3b-a7aa-ff515f2667b2" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="1f521f6d-54b4-4dd9-a9dc-8c11326c1e05" />
+          </propertyInstance>
+          <elementDefinition Id="e7d7bbbf-1017-4c2f-979a-ac3e399c9606" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="44596ad9-01e3-411e-86e8-4621055cef1a">
+          <propertyInstance Id="f6501128-5d75-42b2-a375-7eabc862339c" name="TemplateFilePath" value="ClassTemplate=D:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=D:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=D:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=D:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="39444f83-052e-4ca1-8bc4-f10d8439ec0a" />
+          </propertyInstance>
+          <elementDefinition Id="8570f2c4-7938-4ea6-93b2-dbca14a95a5a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b39d84e7-4559-463f-956d-bc8e7b297a1d">
+          <propertyInstance Id="38c16da4-4420-4141-a941-f0f0eca21dee" name="ProjectPath" value="ClassTemplate=..\ModelingProject_UMLLib\ModelingProject_UMLLib.csproj|EnumTemplate=..\ModelingProject_UMLLib\ModelingProject_UMLLib.csproj|InterfaceTemplate=..\ModelingProject_UMLLib\ModelingProject_UMLLib.csproj|StructTemplate=..\ModelingProject_UMLLib\ModelingProject_UMLLib.csproj">
+            <elementDefinition Id="4116cbb0-2fe7-4042-b772-fd8c3d6fe160" />
+          </propertyInstance>
+          <elementDefinition Id="9a86aabc-f563-4102-9198-efb469404b63" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7ef669bb-2d12-4485-a03c-a973a5110635">
+          <propertyInstance Id="5178cbc8-4bdc-468b-8f42-8f87e2453554" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="43626907-b0dc-474b-a408-d947a367c221" />
+          </propertyInstance>
+          <elementDefinition Id="53eee1f1-4ef3-4e44-86cd-c49e8226dba5" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6ea7dd91-66df-4b8c-91db-6e575799af1b">
+          <propertyInstance Id="b6aa9bf4-e1f6-4a7d-af48-b4c08c682b50" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="71b814cd-2d88-4d4e-b58e-a73abd6a0890" />
+          </propertyInstance>
+          <elementDefinition Id="6bd4ec99-694c-4a38-927c-da35e83f962d" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ed74279e-1e5c-448d-bb60-351cee4c3c40">
+          <propertyInstance Id="a035af8e-5b06-48e7-9131-453e10f34974" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="c9ac2148-be58-49b7-9746-5e0882ea53ed" />
+          </propertyInstance>
+          <elementDefinition Id="71192354-eca9-4007-96d1-ad4c74a66df2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e232dbb8-b00a-4fea-afd7-a84f75b2e0cc">
+          <propertyInstance Id="d1bfee5f-a212-4608-ad88-61b391e04e43" name="Parameters">
+            <elementDefinition Id="0eb65942-f3f8-461a-842c-94e89d523979" />
+          </propertyInstance>
+          <elementDefinition Id="7f3ab335-beb1-4154-bb47-d2c2c61f9e66" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
   <profileInstances>
     <packageHasProfileInstances Id="8018a04d-a3f6-428f-a231-659f1b6294ea">
       <profileInstance Id="6c92d6be-0f1e-4ccf-a68f-6135f8890bd5" name="StandardProfileL2">
@@ -12,6 +84,18 @@
         <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
       </profileInstance>
       <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b3ab7c4f-21a1-4345-bf99-7c3640be04ae">
+      <profileInstance Id="3d2a1850-b2d8-4154-b896-eb3ebc6ed561" name="CSharpProfile">
+        <elementDefinition Id="c9756099-1dcc-4088-8285-5e8f4d7776d8" />
+      </profileInstance>
+      <elementDefinition Id="07d552af-7351-4594-a2a4-ed6a1c940b74" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d1200a9d-9a7f-4928-b3a9-3a0252758e58">
+      <profileInstance Id="18bef8a1-853b-463e-8101-a765c2261135" name="TextTemplateBindings">
+        <elementDefinition Id="5335f7e4-e1ac-4728-b06a-7e07a30dcbfb" />
+      </profileInstance>
+      <elementDefinition Id="698c7e7e-975b-4309-893c-edcffee1340f" />
     </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>

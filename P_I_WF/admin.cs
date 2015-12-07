@@ -95,11 +95,12 @@ namespace P_I_WF
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             try
             {
                 l_con.Open();
                 SQLiteCommand cmd_add = l_con.CreateCommand();
-                cmd_add.CommandText = "INSERT INTO [tvprog] ([show],[time],[leading],[links],[duration],[advert],[comments]) VALUES ('" + tb_show.Text + "', '" + tb_time.Text + "', '" + tb_leading.Text + "', '" + tb_links.Text + "', '" + tb_duration.Text + "', '" + tb_advert.Text + "', '" + tb_comments.Text + "')";
+                cmd_add.CommandText = "INSERT INTO [tvprog] ([show],[time],[leading],[links],[duration],[advert],[comments]) VALUES ('" + tb_show.Text + "', '" + mtb_time.Text + "', '" + tb_leading.Text + "', '" + tb_links.Text + "', '" + mtb_duration.Text + "', '" + mtb_advert.Text + "', '" + tb_comments.Text + "')";
                 if (cmd_add.ExecuteNonQuery() == 1)
                     MessageBox.Show("Запись добавлена!");
 
@@ -113,6 +114,34 @@ namespace P_I_WF
                 l_con.Close();
             }
             catch (SQLiteException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void mtb_duration_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                int a = int.Parse(mtb_duration.Text);
+                if (a < 30)
+                    MessageBox.Show("Введите значение больше 30");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void mtb_time_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                DateTime a = DateTime.Parse(mtb_duration.Text);
+                if (a.Hour < 4)
+                    MessageBox.Show("Введите значение больше 4:00");
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

@@ -39,59 +39,33 @@ namespace P_I_WF
             dt.Load(dr);
             dataGridView1.DataSource = dt;
             l_con.Close();
+
+            SQLiteCommand cm = new SQLiteCommand("SELECT * FROM [usersss] ORDER BY id", l_con);
+
+            try
+            {
+                SQLiteDataAdapter dau = new SQLiteDataAdapter(cm);
+                DataTable dtu = new DataTable();
+                dau.Fill(dtu);
+
+                foreach (DataRow dru in dtu.Rows)
+                {
+                    ListViewItem item = new ListViewItem(dru["login"].ToString());
+                    item.SubItems.Add(dru["groups"].ToString());
+
+                    lv_user.Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
         }
 
-        private void b_save_Click(object sender, EventArgs e)
-        {
-            //l_con.Open();
-
-            //// DATABASE (Local): Formulate the SQL command.
-            //String strSqlCommand = "SELECT * FROM tvprog";
-            //System.Data.SQLite.SQLiteCommand oLocalCommand = new System.Data.SQLite.SQLiteCommand(strSqlCommand, l_con);
-
-            //// DATABASE (Local): Get the data records.
-            //SQLiteDataAdapter oLocalAdapter = new SQLiteDataAdapter(oLocalCommand);
-            //oLocalAdapter.AcceptChangesDuringUpdate = true;
-            //DataSet oLocalSet = new DataSet();
-            //oLocalAdapter.Fill(oLocalSet, "tvprog");
-
-            //// 
-            //SQLiteCommandBuilder oBuilder = new SQLiteCommandBuilder(oLocalAdapter);
-
-            //// Try to write to some changes.
-            //String strValue = oLocalSet.Tables[0].Rows[0][7].ToString();
-            //oLocalSet.Tables[0].Rows[0][7] = 8;
-            //strValue = oLocalSet.Tables[0].Rows[0][7].ToString();
-            //oLocalSet.AcceptChanges();
-            //oLocalAdapter.UpdateCommand = oBuilder.GetUpdateCommand();
-            //oLocalAdapter.Update(oLocalSet.Tables[0]);
-
-            //// Clean up.
-            //oLocalSet.Dispose();
-            //oLocalAdapter.Dispose();
-            //oLocalCommand.Dispose();
-            //oLocalCommand = null;
-
-            ////SQLiteDataAdapter da = new SQLiteDataAdapter("SELECT * FROM tvprog", l_con);
-            ////da.UpdateCommand = new SQLiteCommand("UPDATE * FROM tvprog", l_con);
-            ////SQLiteCommandBuilder cb = new SQLiteCommandBuilder(da);
-            ////da.UpdateCommand = cb.GetUpdateCommand();
-            //l_con.Close();
-
-
-            ////l_con.Open();
-            ////SQLiteCommand cmd_save = l_con.CreateCommand();
-            ////cmd_save.CommandText = "UPDATE * FROM tvprog";
-            ////SQLiteDataReader drs = cmd_save.ExecuteReader(CommandBehavior.CloseConnection);
-            ////DataTable dts = new DataTable();
-            ////dts.Load(drs);
-            ////dataGridView1.DataSource = dts;
-            ////l_con.Close();
-        }
 
         private void b_add_Click(object sender, EventArgs e)
         {

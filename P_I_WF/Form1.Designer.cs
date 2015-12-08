@@ -72,17 +72,17 @@
             // 
             // show
             // 
-            this.show.Text = "Передача";
+            this.show.Text = "Название передачи";
             this.show.Width = 176;
             // 
             // time
             // 
-            this.time.Text = "Время";
+            this.time.Text = "Дата начала";
             this.time.Width = 174;
             // 
             // leading
             // 
-            this.leading.Text = "Имя ведущего";
+            this.leading.Text = "Ведущий";
             this.leading.Width = 218;
             // 
             // Form1
@@ -94,7 +94,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.b_auth);
             this.Name = "Form1";
-            this.Text = "Телепрограмма";
+            this.Text = "Телепрограмма канала Alpha";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
             this.ResumeLayout(false);

@@ -68,7 +68,7 @@
             // l_hello
             // 
             this.l_hello.AutoSize = true;
-            this.l_hello.Location = new System.Drawing.Point(12, 9);
+            this.l_hello.Location = new System.Drawing.Point(286, 9);
             this.l_hello.Name = "l_hello";
             this.l_hello.Size = new System.Drawing.Size(110, 13);
             this.l_hello.TabIndex = 1;
@@ -76,7 +76,7 @@
             // 
             // b_exit
             // 
-            this.b_exit.Location = new System.Drawing.Point(201, 4);
+            this.b_exit.Location = new System.Drawing.Point(475, 4);
             this.b_exit.Name = "b_exit";
             this.b_exit.Size = new System.Drawing.Size(88, 22);
             this.b_exit.TabIndex = 2;
@@ -380,7 +380,7 @@
             this.Controls.Add(this.b_exit);
             this.Controls.Add(this.l_hello);
             this.Name = "admin";
-            this.Text = "admin";
+            this.Text = "Панель редакции и администрации телеканала Alpha";
             this.Load += new System.EventHandler(this.admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gb_admin.ResumeLayout(false);

@@ -54,6 +54,10 @@
             this.lv_user = new System.Windows.Forms.ListView();
             this.login = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groups = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tb_login = new System.Windows.Forms.TextBox();
+            this.b_toadmin = new System.Windows.Forms.Button();
+            this.b_toeditor = new System.Windows.Forms.Button();
+            this.b_touser = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -281,11 +285,52 @@
             this.groups.Text = "Группа";
             this.groups.Width = 79;
             // 
+            // tb_login
+            // 
+            this.tb_login.Location = new System.Drawing.Point(447, 390);
+            this.tb_login.Name = "tb_login";
+            this.tb_login.Size = new System.Drawing.Size(100, 20);
+            this.tb_login.TabIndex = 29;
+            // 
+            // b_toadmin
+            // 
+            this.b_toadmin.Location = new System.Drawing.Point(558, 338);
+            this.b_toadmin.Name = "b_toadmin";
+            this.b_toadmin.Size = new System.Drawing.Size(97, 37);
+            this.b_toadmin.TabIndex = 30;
+            this.b_toadmin.Text = "Администратор";
+            this.b_toadmin.UseVisualStyleBackColor = true;
+            this.b_toadmin.Click += new System.EventHandler(this.b_toadmin_Click);
+            // 
+            // b_toeditor
+            // 
+            this.b_toeditor.Location = new System.Drawing.Point(558, 381);
+            this.b_toeditor.Name = "b_toeditor";
+            this.b_toeditor.Size = new System.Drawing.Size(97, 37);
+            this.b_toeditor.TabIndex = 31;
+            this.b_toeditor.Text = "Редактор";
+            this.b_toeditor.UseVisualStyleBackColor = true;
+            this.b_toeditor.Click += new System.EventHandler(this.b_toeditor_Click);
+            // 
+            // b_touser
+            // 
+            this.b_touser.Location = new System.Drawing.Point(558, 424);
+            this.b_touser.Name = "b_touser";
+            this.b_touser.Size = new System.Drawing.Size(97, 37);
+            this.b_touser.TabIndex = 32;
+            this.b_touser.Text = "Пользователь";
+            this.b_touser.UseVisualStyleBackColor = true;
+            this.b_touser.Click += new System.EventHandler(this.b_touser_Click);
+            // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 510);
+            this.Controls.Add(this.b_touser);
+            this.Controls.Add(this.b_toeditor);
+            this.Controls.Add(this.b_toadmin);
+            this.Controls.Add(this.tb_login);
             this.Controls.Add(this.lv_user);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -347,5 +392,9 @@
         private System.Windows.Forms.ListView lv_user;
         private System.Windows.Forms.ColumnHeader login;
         private System.Windows.Forms.ColumnHeader groups;
+        private System.Windows.Forms.TextBox tb_login;
+        private System.Windows.Forms.Button b_toadmin;
+        private System.Windows.Forms.Button b_toeditor;
+        private System.Windows.Forms.Button b_touser;
     }
 }

@@ -146,5 +146,62 @@ namespace P_I_WF
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void b_toadmin_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l_con.Open();
+            SQLiteCommand cmd_toadmin = l_con.CreateCommand();
+            cmd_toadmin.CommandText = "UPDATE [usersss] SET groups = 'admin' WHERE login ='" + tb_login.Text + "'";
+            if (cmd_toadmin.ExecuteNonQuery() == 1)
+                MessageBox.Show(""+ tb_login.Text + " стал администратором.");
+
+            l_con.Close();
+
+        }
+            catch (SQLiteException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void b_toeditor_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l_con.Open();
+                SQLiteCommand cmd_toeditor = l_con.CreateCommand();
+                cmd_toeditor.CommandText = "UPDATE [usersss] SET groups = 'editor' WHERE login ='" + tb_login.Text + "'";
+                if (cmd_toeditor.ExecuteNonQuery() == 1)
+                    MessageBox.Show("" + tb_login.Text + " стал редактором.");
+
+                l_con.Close();
+
+            }
+            catch (SQLiteException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void b_touser_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l_con.Open();
+                SQLiteCommand cmd_touser = l_con.CreateCommand();
+                cmd_touser.CommandText = "UPDATE [usersss] SET groups = 'user' WHERE login ='" + tb_login.Text + "'";
+                if (cmd_touser.ExecuteNonQuery() == 1)
+                    MessageBox.Show("" + tb_login.Text + " стал простым пользователем.");
+
+                l_con.Close();
+
+            }
+            catch (SQLiteException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

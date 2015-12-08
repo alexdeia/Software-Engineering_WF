@@ -93,7 +93,7 @@ namespace P_I_WF
             ////l_con.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void b_add_Click(object sender, EventArgs e)
         {
 
             try
@@ -145,6 +145,32 @@ namespace P_I_WF
             //{
             //    MessageBox.Show(ex.Message);
             //}
+        }
+
+        private void b_edit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l_con.Open();
+                SQLiteCommand cmd_edit = l_con.CreateCommand();
+               // cmd_edit.CommandText = "UPDATE [tvprog] SET show,time,leading,links,duration,advert,comments VALUES ('" + tb_show.Text + "', '" + mtb_time.Text + "', '" + tb_leading.Text + "', '" + tb_links.Text + "', '" + mtb_duration.Text + "', '" + mtb_advert.Text + "', '" + tb_comments.Text + "' WHERE id = '" + tb_id + "')";
+                cmd_edit.CommandText = "UPDATE [tvprog] SET show = '" + tb_show.Text + "', time = '" + mtb_time.Text + "', leading = '" + tb_leading.Text + "', links = '" + tb_links.Text + "', duration = '" + mtb_duration.Text + "', advert = '" + mtb_advert.Text + "', comments = '" + tb_comments.Text + "' WHERE id ='"+ tb_id.Text + "'";
+                if (cmd_edit.ExecuteNonQuery() == 1)
+                    MessageBox.Show("Запись отредактирована!");
+
+                SQLiteCommand cmd_view = l_con.CreateCommand();
+                cmd_view.CommandText = "SELECT * FROM tvprog";
+                SQLiteDataReader dr = cmd_view.ExecuteReader(CommandBehavior.CloseConnection);
+                DataTable dt = new DataTable();
+                dt.Load(dr);
+                dataGridView1.DataSource = dt;
+
+                l_con.Close();
+            }
+            catch (SQLiteException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

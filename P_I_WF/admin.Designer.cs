@@ -32,7 +32,7 @@
             this.b_exit = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.b_save = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.b_add = new System.Windows.Forms.Button();
             this.tb_show = new System.Windows.Forms.TextBox();
             this.tb_leading = new System.Windows.Forms.TextBox();
             this.tb_links = new System.Windows.Forms.TextBox();
@@ -48,6 +48,8 @@
             this.mtb_time = new System.Windows.Forms.MaskedTextBox();
             this.mtb_duration = new System.Windows.Forms.MaskedTextBox();
             this.mtb_advert = new System.Windows.Forms.MaskedTextBox();
+            this.b_edit = new System.Windows.Forms.Button();
+            this.tb_id = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,15 +92,15 @@
             this.b_save.UseVisualStyleBackColor = true;
             this.b_save.Click += new System.EventHandler(this.b_save_Click);
             // 
-            // button1
+            // b_add
             // 
-            this.button1.Location = new System.Drawing.Point(773, 300);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.b_add.Location = new System.Drawing.Point(773, 300);
+            this.b_add.Name = "b_add";
+            this.b_add.Size = new System.Drawing.Size(86, 23);
+            this.b_add.TabIndex = 5;
+            this.b_add.Text = "Добавить";
+            this.b_add.UseVisualStyleBackColor = true;
+            this.b_add.Click += new System.EventHandler(this.b_add_Click);
             // 
             // tb_show
             // 
@@ -228,11 +230,30 @@
             this.mtb_advert.Size = new System.Drawing.Size(100, 20);
             this.mtb_advert.TabIndex = 23;
             // 
+            // b_edit
+            // 
+            this.b_edit.Location = new System.Drawing.Point(773, 329);
+            this.b_edit.Name = "b_edit";
+            this.b_edit.Size = new System.Drawing.Size(86, 23);
+            this.b_edit.TabIndex = 24;
+            this.b_edit.Text = "Изменить";
+            this.b_edit.UseVisualStyleBackColor = true;
+            this.b_edit.Click += new System.EventHandler(this.b_edit_Click);
+            // 
+            // tb_id
+            // 
+            this.tb_id.Location = new System.Drawing.Point(12, 347);
+            this.tb_id.Name = "tb_id";
+            this.tb_id.Size = new System.Drawing.Size(26, 20);
+            this.tb_id.TabIndex = 25;
+            // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 568);
+            this.Controls.Add(this.tb_id);
+            this.Controls.Add(this.b_edit);
             this.Controls.Add(this.mtb_advert);
             this.Controls.Add(this.mtb_duration);
             this.Controls.Add(this.mtb_time);
@@ -248,7 +269,7 @@
             this.Controls.Add(this.tb_links);
             this.Controls.Add(this.tb_leading);
             this.Controls.Add(this.tb_show);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.b_add);
             this.Controls.Add(this.b_save);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.b_exit);
@@ -268,7 +289,7 @@
         private System.Windows.Forms.Button b_exit;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button b_save;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button b_add;
         private System.Windows.Forms.TextBox tb_show;
         private System.Windows.Forms.TextBox tb_leading;
         private System.Windows.Forms.TextBox tb_links;
@@ -284,5 +305,7 @@
         private System.Windows.Forms.MaskedTextBox mtb_time;
         private System.Windows.Forms.MaskedTextBox mtb_duration;
         private System.Windows.Forms.MaskedTextBox mtb_advert;
+        private System.Windows.Forms.Button b_edit;
+        private System.Windows.Forms.TextBox tb_id;
     }
 }

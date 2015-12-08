@@ -50,6 +50,7 @@ namespace P_I_WF
                 this.Hide();
                 admin adm = new admin();
                 adm.l_hello.Text = "Добро пожаловать, " + login_box.Text;
+                adm.gb_admin.Enabled = false;
                 adm.Show();
 
             }

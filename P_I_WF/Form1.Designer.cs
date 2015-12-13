@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.b_auth = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lv_guest = new System.Windows.Forms.ListView();
@@ -62,7 +63,7 @@
             this.time,
             this.leading});
             this.lv_guest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lv_guest.Location = new System.Drawing.Point(12, 79);
+            this.lv_guest.Location = new System.Drawing.Point(12, 41);
             this.lv_guest.Name = "lv_guest";
             this.lv_guest.Size = new System.Drawing.Size(573, 241);
             this.lv_guest.TabIndex = 2;
@@ -89,10 +90,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 350);
+            this.ClientSize = new System.Drawing.Size(601, 299);
             this.Controls.Add(this.lv_guest);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.b_auth);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Телепрограмма канала Alpha";
             this.Load += new System.EventHandler(this.Form1_Load);

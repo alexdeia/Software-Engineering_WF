@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin));
             this.l_hello = new System.Windows.Forms.Label();
             this.b_exit = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -379,6 +380,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.b_exit);
             this.Controls.Add(this.l_hello);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "admin";
             this.Text = "Панель редакции и администрации телеканала Alpha";
             this.Load += new System.EventHandler(this.admin_Load);

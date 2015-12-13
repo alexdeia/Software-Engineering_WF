@@ -14,7 +14,7 @@ namespace P_I_WF
     public partial class Form1 : Form
     {
         login l = new login();
-        public SQLiteConnection l_con = new SQLiteConnection(@"data source=D:\Program Files\Project\P_I_WF\users.db");
+        public SQLiteConnection l_con = new SQLiteConnection(@"data source=|DataDirectory|\users.db");
         public Form1()
         {
             InitializeComponent();

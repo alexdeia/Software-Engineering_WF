@@ -14,7 +14,7 @@ namespace P_I_WF
 {
     public partial class login : Form
     {
-        public SQLiteConnection l_con = new SQLiteConnection(@"data source=D:\Program Files\Project\P_I_WF\users.db");
+        public SQLiteConnection l_con = new SQLiteConnection(@"data source=|DataDirectory|\users.db");
         public login()
         {
             InitializeComponent();
@@ -64,13 +64,12 @@ namespace P_I_WF
 
             }
             else if (login_box.Text == string.Empty)
-            { MessageBox.Show("Не введён логин"); }
-            else if (password_box.Text == string.Empty)
-            { MessageBox.Show("Не введён пароль"); }
-            else { 
-                MessageBox.Show("Неправильный логин/пароль");
+            { MessageBox.Show("Введите логин"); }
 
-            }
+            else if (password_box.Text == string.Empty)
+            { MessageBox.Show("Введите пароль"); }
+
+            else { MessageBox.Show("Неправильный логин/пароль"); }
         }
 
         private void password_box_TextChanged(object sender, EventArgs e)

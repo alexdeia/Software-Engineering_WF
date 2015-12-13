@@ -13,7 +13,7 @@ namespace P_I_WF
 {
     public partial class admin : Form
     {
-        public SQLiteConnection l_con = new SQLiteConnection(@"data source=D:\Program Files\Project\P_I_WF\users.db");
+        public SQLiteConnection l_con = new SQLiteConnection(@"data source=|DataDirectory|\users.db");
 
         public admin()
         {
@@ -130,7 +130,7 @@ namespace P_I_WF
                // cmd_edit.CommandText = "UPDATE [tvprog] SET show,time,leading,links,duration,advert,comments VALUES ('" + tb_show.Text + "', '" + mtb_time.Text + "', '" + tb_leading.Text + "', '" + tb_links.Text + "', '" + mtb_duration.Text + "', '" + mtb_advert.Text + "', '" + tb_comments.Text + "' WHERE id = '" + tb_id + "')";
                 cmd_edit.CommandText = "UPDATE [tvprog] SET show = '" + tb_show.Text + "', time = '" + mtb_time.Text + "', leading = '" + tb_leading.Text + "', links = '" + tb_links.Text + "', duration = '" + mtb_duration.Text + "', advert = '" + mtb_advert.Text + "', comments = '" + tb_comments.Text + "' WHERE id ='"+ tb_id.Text + "'";
                 if (cmd_edit.ExecuteNonQuery() == 1)
-                    MessageBox.Show("Запись отредактирована!");
+                    MessageBox.Show("Запись отредактирована! Перелогинтесь для обновления.");
 
                 SQLiteCommand cmd_view = l_con.CreateCommand();
                 cmd_view.CommandText = "SELECT * FROM tvprog";

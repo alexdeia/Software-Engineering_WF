@@ -31,11 +31,11 @@
             this.l_hello = new System.Windows.Forms.Label();
             this.b_exit = new System.Windows.Forms.Button();
             this.lv_user_tv = new System.Windows.Forms.ListView();
+            this.show = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.leading = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.duration = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.advert = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.show = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.comments = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
@@ -74,6 +74,11 @@
             this.lv_user_tv.UseCompatibleStateImageBehavior = false;
             this.lv_user_tv.View = System.Windows.Forms.View.Details;
             // 
+            // show
+            // 
+            this.show.Text = "Название передачи";
+            this.show.Width = 141;
+            // 
             // time
             // 
             this.time.Text = "Дата начала";
@@ -94,11 +99,6 @@
             this.advert.Text = "Рекламных пауз";
             this.advert.Width = 99;
             // 
-            // show
-            // 
-            this.show.Text = "Название передачи";
-            this.show.Width = 141;
-            // 
             // comments
             // 
             this.comments.Text = "Комментарии";
@@ -113,7 +113,7 @@
             this.Controls.Add(this.b_exit);
             this.Controls.Add(this.l_hello);
             this.Name = "user";
-            this.Text = "Программа телепередач канала Apha";
+            this.Text = "Программа телепередач канала Alpha";
             this.Load += new System.EventHandler(this.user_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

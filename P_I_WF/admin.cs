@@ -149,26 +149,33 @@ namespace P_I_WF
 
         private void b_toadmin_Click(object sender, EventArgs e)
         {
-            try
+            if (tb_login.Text != string.Empty)
             {
-                l_con.Open();
-            SQLiteCommand cmd_toadmin = l_con.CreateCommand();
-            cmd_toadmin.CommandText = "UPDATE [usersss] SET groups = 'admin' WHERE login ='" + tb_login.Text + "'";
-            if (cmd_toadmin.ExecuteNonQuery() == 1)
-                MessageBox.Show(""+ tb_login.Text + " стал администратором.");
+                try
+                {
+                    l_con.Open();
+                    SQLiteCommand cmd_toadmin = l_con.CreateCommand();
+                    cmd_toadmin.CommandText = "UPDATE [usersss] SET groups = 'admin' WHERE login ='" + tb_login.Text + "'";
+                    if (cmd_toadmin.ExecuteNonQuery() == 1)
+                        MessageBox.Show("" + tb_login.Text + " стал администратором.");
 
-            l_con.Close();
+                    l_con.Close();
 
-        }
-            catch (SQLiteException ex)
-            {
-                MessageBox.Show(ex.Message);
+                }
+                catch (SQLiteException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
+            else { MessageBox.Show("Введите логин пользователя!"); }
+
         }
 
         private void b_toeditor_Click(object sender, EventArgs e)
         {
-            try
+            if (tb_login.Text != string.Empty)
+            {
+                try
             {
                 l_con.Open();
                 SQLiteCommand cmd_toeditor = l_con.CreateCommand();
@@ -183,11 +190,15 @@ namespace P_I_WF
             {
                 MessageBox.Show(ex.Message);
             }
+            }
+            else { MessageBox.Show("Введите логин пользователя!"); }
         }
 
         private void b_touser_Click(object sender, EventArgs e)
         {
-            try
+            if (tb_login.Text != string.Empty)
+            {
+                try
             {
                 l_con.Open();
                 SQLiteCommand cmd_touser = l_con.CreateCommand();
@@ -203,5 +214,7 @@ namespace P_I_WF
                 MessageBox.Show(ex.Message);
             }
         }
+            else { MessageBox.Show("Введите логин пользователя!"); }
+}
     }
 }

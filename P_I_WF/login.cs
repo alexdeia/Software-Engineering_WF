@@ -35,7 +35,7 @@ namespace P_I_WF
             sda.Fill(dta);
             sde.Fill(dte);
             sdu.Fill(dtu);
-            if (dtu.Rows[0][0].ToString() == "1")
+            if (dtu.Rows[0][0].ToString() == "1" && login_box.Text != string.Empty && password_box.Text != string.Empty)
             {
                 MessageBox.Show("Вы успешно авторизированы " + login_box.Text);
                 this.Hide();
@@ -44,7 +44,7 @@ namespace P_I_WF
                 u.Show();
             }
 
-            else if (dte.Rows[0][0].ToString() == "1")
+            else if (dte.Rows[0][0].ToString() == "1" && login_box.Text != string.Empty && password_box.Text != string.Empty)
             {
                 MessageBox.Show("Вы успешно авторизированы " + login_box.Text);
                 this.Hide();
@@ -54,7 +54,7 @@ namespace P_I_WF
                 adm.Show();
 
             }
-            else if (dta.Rows[0][0].ToString() == "1")
+            else if (dta.Rows[0][0].ToString() == "1" && login_box.Text != string.Empty && password_box.Text != string.Empty)
             {
                 MessageBox.Show("Вы успешно авторизированы " + login_box.Text);
                 this.Hide();
@@ -63,6 +63,10 @@ namespace P_I_WF
                 adm.Show();
 
             }
+            else if (login_box.Text == string.Empty)
+            { MessageBox.Show("Не введён логин"); }
+            else if (password_box.Text == string.Empty)
+            { MessageBox.Show("Не введён пароль"); }
             else { 
                 MessageBox.Show("Неправильный логин/пароль");
 

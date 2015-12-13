@@ -37,7 +37,7 @@ namespace P_I_WF
             sdu.Fill(dtu);
             if (dtu.Rows[0][0].ToString() == "1" && login_box.Text != string.Empty && password_box.Text != string.Empty)
             {
-                MessageBox.Show("Вы успешно авторизированы " + login_box.Text);
+                MessageBox.Show("Вы успешно авторизованы, " + login_box.Text);
                 this.Hide();
                 user u = new user();
                 u.l_hello.Text = "Добро пожаловать, " + login_box.Text;
@@ -46,7 +46,7 @@ namespace P_I_WF
 
             else if (dte.Rows[0][0].ToString() == "1" && login_box.Text != string.Empty && password_box.Text != string.Empty)
             {
-                MessageBox.Show("Вы успешно авторизированы " + login_box.Text);
+                MessageBox.Show("Вы успешно авторизованы, " + login_box.Text);
                 this.Hide();
                 admin adm = new admin();
                 adm.l_hello.Text = "Добро пожаловать, " + login_box.Text;
@@ -56,7 +56,7 @@ namespace P_I_WF
             }
             else if (dta.Rows[0][0].ToString() == "1" && login_box.Text != string.Empty && password_box.Text != string.Empty)
             {
-                MessageBox.Show("Вы успешно авторизированы " + login_box.Text);
+                MessageBox.Show("Вы успешно авторизованы, " + login_box.Text);
                 this.Hide();
                 admin adm = new admin();
                 adm.l_hello.Text = "Добро пожаловать, " + login_box.Text;
